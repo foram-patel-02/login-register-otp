@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+a, button{
+    cursor: pointer;
+}
+
+.register-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full screen height */
+    background: url('../images/bg-img-2.jpg') no-repeat; /* Optional: light background */
+    background-size: cover;
+}
+
+.register-wrapper .register{
+    padding: 20px;
+    border-radius: 10px;
+    background: #ffffff73;
+}
+
+.register-wrapper .register h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.register-wrapper .register form input{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    padding: 10px 15px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.register-wrapper .register form input:focus{
+    border-color: #592e83;
+}
+
+.register-wrapper .register form input:focus-visible,
+.register-wrapper .register button:focus-visible,
+.register-wrapper .register form button:focus-visible{
+    outline: none;
+}
+
+.register-wrapper .register form button{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background: #592e83;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 10px;
+    transition: all .3s;
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.register-wrapper .register form button:hover{
+    background: #230c33;
+}
+
+.register-wrapper .register p,
+.register-wrapper .register p button{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.6em;
+}
+
+.register-wrapper .register p button{
+    background: transparent;
+    border: none;
+    position: relative;
+}
+
+.register-wrapper .register p button::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    height: 2px;
+    width: 0;
+    transition: all 2s;
+}
+
+.register-wrapper .register p button:hover::after{
+    width: 100%;
+}
+
+
+
+
+
+/* Global Styles (*): Padding and Margin Reset: The universal reset (padding: 0; margin: 0; ) ensures that all elements are aligned and that no unexpected spacing issues arise across browsers. Font Family: Sets the font to 'Arial',
+sans-serif,
+providing a simple and easy-to-read style. Links and Buttons: Cursor Pointer: For all links (a) and buttons,
+the cursor is set to pointer,
+making them clearly clickable. .register-wrapper: Flexbox Layout: Like the login and OTP pages,
+Flexbox is used to center the register form both vertically and horizontally (min-height: 100vh; ensures it takes full screen height). Background: The background is an image (bg-img-2.jpg),
+creating a visually appealing look. .register (Main Form Container): Padding and Border Radius: The form container has padding: 20px and rounded corners (border-radius: 10px),
+giving it a soft,
+modern look. Semi-transparent Background: The background has a transparent white color (#ffffff73),
+which allows the background image to subtly show through. Heading (h2): The form's heading has a font size of 30px, with a weight of 600 for strong emphasis, and it' s centered with text-align: center. The color is set to white (#fff),
+making it visible against the background. Form and Input Fields: Input Fields: The inputs have a comfortable padding: 10px 15px and a soft border (2px solid rgba(0, 0, 0, 0.1)),
+which turns purple (#592e83) when focused. This gives a clear indication to the user where they are typing. The :focus-visible selector removes the default outline on focus,
+providing a cleaner design. Font Size: 16px for readability. Margin Between Inputs: Each input has a bottom margin (margin-bottom: 10px) to space them out vertically. Submit Button: Button Styling: The button has a bold purple background (#592e83) and a :hover effect where the color darkens to #230c33 on mouse hover. This provides an interactive experience. Rounded Corners: Like the input fields,
+the button has rounded edges (border-radius: 10px),
+which is consistent with the modern,
+clean aesthetic. Transition: The transition: all .3s ensures that the color change on hover happens smoothly. Text and Button Link: Text Styling: The text (for switching to login) is styled to match the button in terms of font size and color (16px and #fff). Button Link with Hover Effect: The button link (p button) is styled to have a transparent background,
+and a subtle underline effect is added using ::after. The underline appears when the button is hovered,
+providing a visually interactive element. */
+
+
+
+

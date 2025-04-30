@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+a, button{
+    cursor: pointer;
+}
+
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full screen height */
+    background: url('../images/bg-img-2.jpg') no-repeat; /* Optional: light background */
+    background-size: cover;
+}
+
+.login-wrapper .login{
+    padding: 20px;
+    border-radius: 10px;
+    background: #ffffff73;
+}
+
+.login-wrapper .login h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-wrapper .login form input{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    padding: 10px 15px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.login-wrapper .login form input:focus{
+    border-color: #592e83;
+}
+
+.login-wrapper .login form input:focus-visible,
+.login-wrapper .login button:focus-visible,
+.login-wrapper .login form button:focus-visible{
+    outline: none;
+}
+
+.login-wrapper .login form button{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background: #592e83;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 10px;
+    transition: all .3s;
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.login-wrapper .login form button:hover{
+    background: #230c33;
+}
+
+.login-wrapper .login p,
+.login-wrapper .login p button{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.6em;
+}
+
+.login-wrapper .login p button{
+    background: transparent;
+    border: none;
+    position: relative;
+}
+
+.login-wrapper .login p button::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    height: 2px;
+    width: 0;
+    transition: all 2s;
+}
+
+.login-wrapper .login p button:hover::after{
+    width: 100%;
+}
+
+
+
+
+
+
+/* Global Styles (*): Resets padding and margin to ensure consistent spacing across all elements. Uses Arial,
+sans-serif for the font-family,
+which is simple and widely used for web projects. a,
+button: The cursor: pointer;
+is added to interactive elements like buttons and links to give the user a visual cue that they are clickable. .login-wrapper: Flexbox Layout: The wrapper uses Flexbox (display: flex) to center the login form both vertically and horizontally,
+providing a clean,
+centered layout. Background: The background image (bg-img-2.jpg) is set to cover the entire background,
+giving a nice visual effect. Height: The min-height: 100vh ensures the wrapper spans the entire viewport height,
+even on smaller screens. .login: The login form has padding and a light,
+semi-transparent background (#ffffff73) to ensure the content stands out while allowing the background to be slightly visible. Border Radius: Rounded corners (border-radius: 10px) for a modern,
+soft look. Heading (h2): The heading has a large font size (30px) with white text (#fff) to make it prominent and easy to read. Line Height & Spacing: The line-height of 1.2em and margin-bottom: 20px ensure the heading is properly spaced from the rest of the content. Input Fields: Padding & Font Size: The input fields have a comfortable padding of 10px 15px and are styled with a light border (rgba(0, 0, 0, 0.1)). Focus State: When the user focuses on an input field,
+the border color changes to purple (#592e83),
+providing a visual cue. Focus Visible: Removes the default outline on focus,
+giving it a more controlled and cleaner appearance. Button Styling: The submit button has a bold,
+purple background (#592e83) with white text,
+making it stand out. Hover Effect: On hover,
+the background changes to a darker purple (#230c33),
+providing visual feedback for interactivity. Transition: The transition: all .3s makes the hover effect smooth. Rounded Corners: The button has rounded corners (border-radius: 10px) to align with the modern design aesthetics. Text and Button in the Footer (p): Paragraph and Button Styling: The text and buttons have a consistent font size and color (#fff),
+keeping the design simple and readable. The button inside the paragraph has a unique hover effect. Underline Animation: On hover,
+an underline effect (::after) animates from left to right,
+creating a modern,
+dynamic interaction. */
